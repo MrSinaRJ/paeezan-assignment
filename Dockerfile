@@ -23,8 +23,8 @@ WORKDIR /app
 COPY --from=builder /app/dist /app/package.json /app/yarn.lock ./
 
 
-ENV NODE_ENV=production
-RUN yarn install --frozen-lockfile --production && \
+ENV NODE_ENV=development
+RUN yarn install --frozen-lockfile --development && \
   yarn cache clean --all
 
 CMD ["node", "dist/main.js"]
