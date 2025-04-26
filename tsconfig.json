@@ -20,7 +20,8 @@
     "noFallthroughCasesInSwitch": false,
     "paths": {
       "@config/*": ["src/config/*"],
-      "@health/*": ["src/modules/health/*"]
+      "@health/*": ["src/modules/health/*"],
+      "@combinations/*": ["src/modules/combinations/*"]
     }
   }
 }
